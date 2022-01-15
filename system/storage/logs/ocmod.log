@@ -1,0 +1,42 @@
+2022-01-07 16:09:23 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 46
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 54
+LINE: 113
+LINE: 125
+LINE: 170
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 28
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 40
+LINE: 46
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 29
+----------------------------------------------------------------
+MOD: CMS
+
+FILE: catalog/view/theme/default/template/common/header.tpl
+CODE: <base href="<?php echo $base; ?>" />
+LINE: 13
+CODE: catalog/view/javascript/font-awesome/css/font-awesome.min.css
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: catalog/view/theme/default/template/common/footer.tpl
+CODE: <li><a href="<?php echo $special; ?>"><?php echo $text_special; ?></a></li>
+LINE: 28
+----------------------------------------------------------------
